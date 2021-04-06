@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 内部封装了 AliPlayer
 ///
 @interface SJAliMediaPlayer : NSObject<SJMediaPlayer>
-- (instancetype)initWithSource:(__kindof AVPSource *)source config:(nullable AVPConfig *)config startPosition:(NSTimeInterval)time;
+- (instancetype)initWithSource:(__kindof AVPSource *)source config:(nullable AVPConfig *)config cacheConfig:(nullable AVPCacheConfig *)cacheConfig startPosition:(NSTimeInterval)time;
 
 @property (nonatomic) NSTimeInterval trialEndPosition;
 @property (nonatomic) BOOL pauseWhenAppDidEnterBackground;
