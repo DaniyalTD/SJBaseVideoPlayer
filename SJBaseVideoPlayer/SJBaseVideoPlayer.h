@@ -43,6 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 视频画面填充模式
 ///
 @property (nonatomic) SJVideoGravity videoGravity;
+@property(nonatomic,strong)StateChanged _Nonnull stateChanged;
 
 ///
 /// 播放器视图
