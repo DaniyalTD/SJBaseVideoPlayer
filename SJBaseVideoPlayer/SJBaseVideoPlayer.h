@@ -34,6 +34,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^StateChanged)(SJPlaybackTimeControlStatus);
+
 @interface SJBaseVideoPlayer : NSObject
 + (NSString *)version;
 + (instancetype)player;
