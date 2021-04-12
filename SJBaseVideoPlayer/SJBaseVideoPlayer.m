@@ -1143,7 +1143,10 @@ typedef struct _SJPlayerControlInfo {
     if ( status == SJPlaybackTimeControlStatusPaused && self.pausedToKeepAppearState ) {
         [self.controlLayerAppearManager keepAppearState];
     }
-self.stateChanged(status);   
+
+    if (self.stateChanged != NULL) {
+        self.stateChanged(status);  
+    }  
 #ifdef SJDEBUG
     [self showLog_TimeControlStatus];
 #endif
